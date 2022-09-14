@@ -1,0 +1,1 @@
+Este repositório contém o arquivo do desafio de Java Básico do Sistema de Hotel realizado pelo Entra21 no Senac.

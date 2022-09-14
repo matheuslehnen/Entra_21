@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <style>
+        main{
+            display: grid;
+            grid-template-columns: 500px 635px;
+
+        }
+        #form, #maps{
+            border: 1px solid #CCC;
+            padding: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+        label span{
+            display: block;
+        }
+
+        input, select{
+            width: 100%;
+            height: 30px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        input[type=radio], input[type=checkbox], input[type=submit], input[type=reset]{
+            width: auto;
+            height: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="form">
+            <form action="" method="POST">
+
+                <h1>Dados Pessoais</h1>
+
+                    <label for="nome">
+                        <span>Nome:</span>
+                        <input type="text" id="nome" name="nome">
+                    </label>
+
+                    <label for="email">
+                        <span>E-Mail:</span>
+                        <input type="text" id="email" name="email">
+                    </label>
+
+                    <label>
+                        <span>Sexo:</span>
+                        <input type="radio" class="sexo" name="sexo" value="M">Masculino
+                        <input type="radio" class="sexo" name="sexo" value="F"> Feminino
+                    </label>
+
+                    <label>
+                        <span>Esporte: </span>
+                        <input type="checkbox" class="esporte" name="esporte" value="futebol">Futebol
+                        <input type="checkbox" class="esporte" name="esporte" value="vôlei">Vôlei
+                        <input type="checkbox" class="esporte" name="esporte" value="natação">Natação
+                    </label>
+
+                    <label for="mesNascimento">
+                        <span>Mês de nascimento:</span>
+                        <select name="mesNascimento" id="mesNascimento">
+                            <option value="1">Janeiro</option>
+                            <option value="2">Fevereiro</option>
+                            <option value="3">Março</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Maio</option>
+                            <option value="6">Junho</option>
+                            <option value="7">Julho</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                        </select>
+                    </label>
+
+                <h1>Endereço</h1>
+
+                    <label for="cep">
+                      <span>CEP:</span>
+                        <input type="text" id="cep" name="cep">
+                    </label>
+
+                    <label for="logradouro">
+                        <span>Logradouro:</span>
+                        <input type="text" id="logradouro" name="logradouro">
+                    </label>
+
+                    <label for="bairro">
+                        <span>Bairro:</span>
+                        <input type="text" id="bairro" name="bairro">
+                    </label>
+
+                    <label for="cidade">
+                        <span>Cidade:</span>
+                        <input type="text" id="cidade" name="cidade">
+                    </label>
+
+                    <label for="estado">
+                        <span>Estado:</span>
+                        <input type="text" id="estado" name="estado">
+                    </label>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+            </form>
+
+        </div>
+        <div id="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.6710937149132!2d-48.54873948510113!3d-27.603724982834926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273831874b03cf%3A0x738d23b15d5cc78b!2sFaculdade%20Senac%20Florian%C3%B3polis!5e0!3m2!1spt-BR!2sbr!4v1659650324793!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+</body>
+</html>

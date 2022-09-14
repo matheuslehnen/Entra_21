@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo Flexbox</title>
+    <style>
+        .container{
+            background-color: #c6f7f8;
+            padding: 16px;
+            height: 500px;
+            display: flex;
+            flex-direction: row; /* flexível para horizontal usa row, para vertical usa line */
+            justify-content: space-between; /* center: justifica elementos no centro dentro container; space-between: alinha na horizontal em única linha */
+            align-items: center; /* alinha os elementos no centro */
+            flex-wrap: wrap-reverse; /*se encolher a janela os elementos se ajustam */
+            align-content: center; /* centraliza todos elementos removendo espaços */
+            row-gap: 16px; /* colocar espaço entre as linhas */
+            column-gap: 16px; /* coloca espaço entre colunas */
+        }
+        /*esse comando abaixo para remover todas as margens: */
+        *{
+            margin: 0;
+        }
+        .caixa-1 { /*formatar div */
+            background-color: #3ba67d;
+            height: 150px; /*altura */
+            width: 150px; /*largura */
+            text-align: center; /*alinhar texto */
+            font-size: 40px;
+            border-radius: 16px; /*curvatura borda div */
+        }
+        .caixa-2{
+            background-color: #DEB887;
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            font-size: 40px;
+            border-radius: 16px;
+        }
+        .caixa-3{
+            background-color: #EEE8AA;
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            font-size: 40px;
+            border-radius: 16px;
+        }
+
+    </style>
+</head>
+<body>
+<main class="container">
+    <div class="caixa-1">1</div>
+    <div class="caixa-2">2</div>
+    <div class="caixa-3">3</div>
+
+    <div class="caixa-1">4</div>
+    <div class="caixa-2">5</div>
+    <div class="caixa-3">6</div>
+
+    <div class="caixa-1">7</div>
+    <div class="caixa-2">8</div>
+    <div class="caixa-3">9</div>
+
+    <div class="caixa-1">10</div>
+    <div class="caixa-2">11</div>
+    <div class="caixa-3">12</div>
+</main>
+</body>
+</html>

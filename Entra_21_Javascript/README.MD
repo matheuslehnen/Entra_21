@@ -1,0 +1,1 @@
+Este repositório contém os arquivos das aulas de Javascript básico realizados no Entra21 através do SENAC.

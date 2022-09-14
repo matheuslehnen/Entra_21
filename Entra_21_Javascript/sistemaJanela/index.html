@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Janela</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/sistemaJanela.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="js/sistemaJanela.js"></script>
+    <script src="js/ajaxViaCEP.js"></script>
+    <script src="js/ajaxIBGE.js"></script>
+</head>
+<body>
+
+    <main>
+        <div id="menu-ativo" >
+            <span class="itens-menu-ativo tabuada" onclick="abrirJanela(this)">Tabuada</span>
+            <span class="itens-menu-ativo imc" onclick="abrirJanela(this)">IMC</span>
+            <span class="itens-menu-ativo calculadora" onclick="abrirJanela(this)">Calculadora</span>
+            <span class="itens-menu-ativo cep" onclick="abrirJanela(this)">Ajax - Via CEP</span>
+            <span class="itens-menu-ativo ibge" onclick="abrirJanela(this)">Ajax - IBGE</span>
+        </div>
+        <div id="janela">
+            <div id="janela-titulo">
+                <span id="icone"></span>
+                <span id="titulo"></span>
+                <span id="botoes-controle">
+                    <span id="fechar" onclick="esconderElemento(('#janela'))">X</span>
+                </span>
+            </div>
+            <div id="janela-menu"></div>
+            <div id="janela-conteudo">
+                <div class="dados template"></div>
+            </div>
+            <div id="janela-status"></div>
+        </div>
+    </main>
+    <footer>
+        <div id="menu">
+            <span id="start" onclick="start()">Iniciar</span>
+        </div>
+        <div id="icones">icones</div>
+        <div id="utilitario">
+            <span id="relogio"></span>
+        </div>
+    </footer>
+</body>
+<script>
+
+
+
+
+    $("#menu-ativo").hide();
+    $("#janela").hide();
+    setInterval(function () {
+    $("#relogio").text((new Date).toLocaleString().substr(9, 9));
+}, 1000);
+
+
+</script>
+
+
+</html>

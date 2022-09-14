@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+body{
+    background: #ccc url("../img/plano-de-fundo.jpg") no-repeat right top fixed;
+}
+
+#menu-ativo {
+    width: 260px;
+    height: 360px;
+    background-color: #222;
+    position: absolute;
+    top: auto;
+    bottom: 50px;
+    border-top-right-radius: 15px;
+    opacity: 0.8;
+}
+
+
+
+#menu-ativo .itens-menu-ativo{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    cursor: pointer
+}
+
+#menu-ativo .tabuada{
+    margin-top: 15px;
+}
+
+.itens-menu-ativo:hover{
+    background-color: #555555;
+}
+
+#janela{
+    display: block;
+    width: 1200px;
+    height: 700px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border: 1px solid #555555;
+}
+
+
+
+#janela #janela-titulo{
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    height: 30px;
+    border: 1px solid red;
+}
+
+
+
+#botoes-controle #fechar{
+    cursor: pointer;
+}
+
+#botoes-controle #fechar:hover{
+    font-weight: bold;
+}
+
+
+/* AJAX CEP */
+
+input#cep{
+    color: #000;
+}
+
+/* AJAX IBGE */
+
+select, input{
+    color: #000;
+}
+
+option, input{
+    color: #000;
+}
+
+
+
+footer{
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 130px auto 300px;
+
+}
+
+#start:hover{
+    background-color: red;
+}
+
+#start{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    background-color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+

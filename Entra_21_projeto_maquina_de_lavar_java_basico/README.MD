@@ -1,0 +1,1 @@
+Este repositório contém o arquivo do desafio de Java Básico da Máquina de Lavar realizado pelo Entra21 no Senac.

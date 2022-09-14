@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script>
+        let nome = "Matheus";
+        let idade = 32;
+
+        console.log("Olá " + nome + " sua idade é " + idade);
+
+
+        // let n1 = prompt("Digite um número: ");
+        // let n2 = prompt("Digite outro número: ");
+        //
+        //
+        // if (n1 > n2) {
+        //     let aux = n1;
+        //     n1 = n2;
+        //     n2 = aux;
+        //     for (n1; n1 <= n2; n1++) {
+        //         console.log("****************************");
+        //         for (let i = 1; i < 11; i++) {
+        //             console.log(n1 + " x " + i + " = " + n1 * i);
+        //         }
+        //     }
+        // } else {
+        //     for (n1; n1 <= n2; n1++) {
+        //         console.log("****************************");
+        //         for (let i = 1; i < 11; i++) {
+        //             console.log(n1 + " x " + i + " = " + n1 * i);
+        //         }
+        //     }
+        // }
+
+
+        let tabuada = prompt("Digite números digitados separados por (;)");
+        tabuada = tabuada.split(";");
+
+        tabuada.forEach(element => {
+            for(let i = 1; i <= 10 ; i++){
+                console.log(element + " x " + i + " = " + element * i);
+            }
+        });
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
